@@ -11,7 +11,7 @@
         <div v-for="(num, index) in scrollNumList" :key="index">{{ num }}</div>
       </div>
     </div>
-    <span>,</span>
+    <span class="symbol">,</span>
     <div>
       <div class="scrollList">
         <div v-for="(num, index) in scrollNumList" :key="index">{{ num }}</div>
@@ -27,7 +27,7 @@
         <div v-for="(num, index) in scrollNumList" :key="index">{{ num }}</div>
       </div>
     </div>
-    <span>,</span>
+    <span class="symbol">,</span>
     <div>
       <div class="scrollList">
         <div v-for="(num, index) in scrollNumList" :key="index">{{ num }}</div>
@@ -123,7 +123,10 @@ const checkNumChange = function () {
   position: relative;
   overflow: hidden;
 }
-
+.symbol{
+  color: #e49449;
+  font-size: 25px;
+}
 .scrollList {
   display: flex;
   flex-direction: column;
